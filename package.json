@@ -16,5 +16,10 @@
   "bugs": {
     "url": "https://github.com/Dora-O/README_Generator/issues"
   },
-  "homepage": "https://github.com/Dora-O/README_Generator#readme"
+  "homepage": "https://github.com/Dora-O/README_Generator#readme",
+  "dependencies": {
+    "inquirer": "^8.0.0",
+    "node": "^15.8.0"
+  },
+  "devDependencies": {}
 }

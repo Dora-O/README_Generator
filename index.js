@@ -1,8 +1,11 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
+const util = require ('util')
 
-inquirer
-    .prompt([
+const writeFileAsync = util.promisify(fs.writeFile);
+
+const promptUser =() =>{
+return inquirer.prompt([
         {
             type: "input",
             message: "What is the title of this project?",
@@ -49,5 +52,34 @@ inquirer
             message: "What is your email for questions?",
             name: "email"
         },
+    ]);
+};
+  
+const generateREADME = (answers) => {
+    `
+    ${answers.title}
+    ${answers.description}
+    ${answers.installation}
+    ${answers.usage}
+    ${answers.license}
+    ${answers.contributors}
+    ${answers.tests}
+    ${answers.githubinfo}
+    ${answers.email}
 
-    ])
+    `
+};
+
+const init = () => {
+    promptUser()
+    .then((answers) => writeFileAsync('README.md', generateREADME(answers)))
+    .then(() => console.log('Successfully wrote to README.md'))
+    .catch((err) => console.error(err));
+};
+
+init();
+
+
+// function writeToFile(fileName, data) {}
+// function init() {}
+// init();
