@@ -59,7 +59,6 @@ const generateREADME = (answers) =>
     `
 # ${answers.title}
 ### Created by ${answers.githubinfo} Github user.
-
 ## Table of Contents
 * [Description](#description)
 * [Installation](#installation)
@@ -68,13 +67,10 @@ const generateREADME = (answers) =>
 * [Tests](#tests)
 * [License](#llicense)
 * [Questions](#questions)
-
 ### Description
 ${answers.description}
-
 ### Installation
 ${answers.installation}
-
 ### Usage
 ${answers.usage}
     
@@ -86,10 +82,8 @@ ${answers.contributors}
     
 ### Tests
 ${answers.tests}
-
 ### Contact Info
 ${answers.email}
-
 `
 
     ;
@@ -104,21 +98,20 @@ const init = () => {
 init();
 
 
-switch (licenseType) {
-    case 'Apache license 2.0':
-        response = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
-        break;
-    case 'IBM':
-        response = '[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)'
-        break;
-    case 'MIT':
-        response = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
-        break;
-    case 'ICS':
-        response = '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)'
-        break;
-    default:
-        response = 'None'
-        break;
-}return response;
-
+// switch (licenseType) {
+//     case 'Apache license 2.0':
+//         response = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+//         break;
+//     case 'IBM':
+//         response = '[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)'
+//         break;
+//     case 'MIT':
+//         response = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+//         break;
+//     case 'ICS':
+//         response = '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)'
+//         break;
+//     default:
+//         response = 'None'
+//         break;
+// }return response;
