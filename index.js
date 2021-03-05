@@ -57,14 +57,37 @@ return inquirer.prompt([
   
 const generateREADME = (answers) => 
     `
-    ${answers.title}
+    # ${answers.title}
+    # Created by ${answers.githubinfo} Github user.
+
+    # Table of Contents
+    -Description
+    -Installation
+    -Usage
+    -Contributions
+    -Tests
+    -License
+    -Questions
+
+    #Description
     ${answers.description}
+
+    #Installation
     ${answers.installation}
+
+    #Usage
     ${answers.usage}
+    
+    #Licenses
     ${answers.license}
+    
+    #Contributors
     ${answers.contributors}
+    
+    #Tests
     ${answers.tests}
-    ${answers.githubinfo}
+
+    #Contact Info
     ${answers.email}
 
     `
