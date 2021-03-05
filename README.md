@@ -1,8 +1,8 @@
 
-    # ReadMe Generator
-    # Created by dora-o Github user.
+    # README GENERATOR
+    ### Created by dora-o Github user.
 
-    # Table of Contents
+    ## Table of Contents
     -Description
     -Installation
     -Usage
@@ -11,25 +11,25 @@
     -License
     -Questions
 
-    #Description
+    ### Description
     This program allows you to create automatic Readme files for your projects by following a series of commands on node.js.
 
-    #Installation
+    ### Installation
     You will need to use  the npm init -y and init install inquirer command.
 
-    #Usage
+    ### Usage
     You will need to access the main folder where index.js exists, run node index.js and follow prompts on command line to generate a ReadMe file.
     
-    #Licenses
+    ### Licenses
     MIT
     
-    #Contributors
+    ### Contributors
     No
     
-    #Tests
+    ### Tests
     N/A
 
-    #Contact Info
+    ### Contact Info
     dorozco2390@utexas.edu
 
     
