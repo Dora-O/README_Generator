@@ -52,11 +52,8 @@ const promptUser = () => {
             message: "What is your email for questions?",
             name: "email"
         },
-    ]).then((data) => {
-        const license =data.license
-        const badge = licenseBadge(license)
-    })
-};
+    ])
+}
 
 const generateREADME = (answers) =>
     `
