@@ -27,7 +27,7 @@ return inquirer.prompt([
             name: "usage"
         },
         {
-            type: "input",
+            type: "list",
             message: "What license was used for this application?",
             name: "license",
             choices: ["Appache license 2.0", "IBM", "MIT", "ICS", "None"]
@@ -68,6 +68,7 @@ const generateREADME = (answers) => {
     ${answers.email}
 
     `
+    
 };
 
 const init = () => {
@@ -78,8 +79,3 @@ const init = () => {
 };
 
 init();
-
-
-// function writeToFile(fileName, data) {}
-// function init() {}
-// init();
