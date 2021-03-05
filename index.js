@@ -61,13 +61,13 @@ const generateREADME = (answers) =>
 ### Created by ${answers.githubinfo} Github user.
 
 ## Table of Contents
--Description
--Installation
--Usage
--Contributions
--Tests
--License
--Questions
+* Description
+* Installation
+* Usage
+* Contributions
+* Tests
+* License
+* Questions
 
 ### Description
 ${answers.description}
