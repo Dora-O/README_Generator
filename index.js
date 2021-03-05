@@ -58,9 +58,9 @@ return inquirer.prompt([
 const generateREADME = (answers) => 
     `
     # ${answers.title}
-    # Created by ${answers.githubinfo} Github user.
+    ### Created by ${answers.githubinfo} Github user.
 
-    # Table of Contents
+    ## Table of Contents
     -Description
     -Installation
     -Usage
@@ -69,25 +69,25 @@ const generateREADME = (answers) =>
     -License
     -Questions
 
-    #Description
+    ### Description
     ${answers.description}
 
-    #Installation
+    ### Installation
     ${answers.installation}
 
-    #Usage
+    ### Usage
     ${answers.usage}
     
-    #Licenses
+    ### Licenses
     ${answers.license}
     
-    #Contributors
+    ### Contributors
     ${answers.contributors}
     
-    #Tests
+    ### Tests
     ${answers.tests}
 
-    #Contact Info
+    ### Contact Info
     ${answers.email}
 
     `
