@@ -1,11 +1,11 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
-const util = require ('util')
+const util = require('util')
 
 const writeFileAsync = util.promisify(fs.writeFile);
 
-const promptUser =() =>{
-return inquirer.prompt([
+const promptUser = () => {
+    return inquirer.prompt([
         {
             type: "input",
             message: "What is the title of this project?",
@@ -52,11 +52,14 @@ return inquirer.prompt([
             message: "What is your email for questions?",
             name: "email"
         },
-    ]);
+    ]).then((data) => {
+        const license =data.license
+        const badge = licenseBadge(license)
+    })
 };
-  
-const generateREADME = (answers) => 
-`
+
+const generateREADME = (answers) =>
+    `
 # ${answers.title}
 ### Created by ${answers.githubinfo} Github user.
 
@@ -91,14 +94,34 @@ ${answers.tests}
 ${answers.email}
 
 `
-    
-;
+
+    ;
 
 const init = () => {
     promptUser()
-    .then((answers) => writeFileAsync('README.md', generateREADME(answers)))
-    .then(() => console.log('Successfully wrote to README.md'))
-    .catch((err) => console.error(err));
+        .then((answers) => writeFileAsync('README.md', generateREADME(answers)))
+        .then(() => console.log('Successfully wrote to README.md'))
+        .catch((err) => console.error(err));
 };
 
 init();
+
+
+switch (licenseType) {
+    case 'Apache license 2.0':
+        response = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+        break;
+    case 'IBM':
+        response = '[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)'
+        break;
+    case 'MIT':
+        response = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+        break;
+    case 'ICS':
+        response = '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)'
+        break;
+    default:
+        response = 'None'
+        break;
+}return response;
+
