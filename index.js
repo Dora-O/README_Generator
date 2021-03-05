@@ -55,7 +55,7 @@ return inquirer.prompt([
     ]);
 };
   
-const generateREADME = (answers) => {
+const generateREADME = (answers) => 
     `
     ${answers.title}
     ${answers.description}
@@ -69,7 +69,7 @@ const generateREADME = (answers) => {
 
     `
     
-};
+;
 
 const init = () => {
     promptUser()
