@@ -3,13 +3,13 @@
 ### Created by Dora-O Github user.
 
 ## Table of Contents
-* Description
-* Installation
-* Usage
-* Contributions
-* Tests
-* License
-* Questions
+* [Description](#description)
+* [Installation](#installation)
+* [Usage](#usage)
+* [Contributions](#contributions)
+* [Tests](#tests)
+* [License](#llicense)
+* [Questions](#questions)
 
 ### Description
 This program allows you to create automatic Readme files for your projects by following a series of commands on node.js.
