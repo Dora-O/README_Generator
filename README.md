@@ -1,15 +1,15 @@
 
 # README GENERATOR
-### Created by dora-o Github user.
+### Created by Dora-O Github user.
 
 ## Table of Contents
--Description
--Installation
--Usage
--Contributions
--Tests
--License
--Questions
+* Description
+* Installation
+* Usage
+* Contributions
+* Tests
+* License
+* Questions
 
 ### Description
 This program allows you to create automatic Readme files for your projects by following a series of commands on node.js.
