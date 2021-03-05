@@ -56,41 +56,41 @@ return inquirer.prompt([
 };
   
 const generateREADME = (answers) => 
-    `
-    # ${answers.title}
-    ### Created by ${answers.githubinfo} Github user.
+`
+# ${answers.title}
+### Created by ${answers.githubinfo} Github user.
 
-    ## Table of Contents
-    -Description
-    -Installation
-    -Usage
-    -Contributions
-    -Tests
-    -License
-    -Questions
+## Table of Contents
+-Description
+-Installation
+-Usage
+-Contributions
+-Tests
+-License
+-Questions
 
-    ### Description
-    ${answers.description}
+### Description
+${answers.description}
 
-    ### Installation
-    ${answers.installation}
+### Installation
+${answers.installation}
 
-    ### Usage
-    ${answers.usage}
+### Usage
+${answers.usage}
     
-    ### Licenses
-    ${answers.license}
+### Licenses
+${answers.license}
     
-    ### Contributors
-    ${answers.contributors}
+### Contributors
+${answers.contributors}
     
-    ### Tests
-    ${answers.tests}
+### Tests
+${answers.tests}
 
-    ### Contact Info
-    ${answers.email}
+### Contact Info
+${answers.email}
 
-    `
+`
     
 ;
 
