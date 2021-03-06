@@ -76,7 +76,7 @@ ${answers.installation}
 ${answers.usage}
     
 ### Licenses
-${answers.license}
+${licenseBadge(answers)}
     
 ### Contributors
 ${answers.contributors}
