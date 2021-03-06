@@ -18,7 +18,7 @@ You will need to use the npm init -y and init install inquirer command.
 You will need to access the main folder where index.js exists, run node index.js and follow prompts on command line to generate a ReadMe file.
     
 ### Licenses
-MIT
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
     
 ### Contributors
 No
