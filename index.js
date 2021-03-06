@@ -1,7 +1,7 @@
 const inquirer = require('inquirer');
 const fs = require('fs');
 const util = require('util')
-
+const generateMarkdown = require('./utils/generateMarkdown');
 const writeFileAsync = util.promisify(fs.writeFile);
 
 const promptUser = () => {
@@ -55,9 +55,10 @@ const promptUser = () => {
     ])
 }
 
-const generateREADME = (answers) =>
+const generateREADME = (answers, badge) =>
     `
 # ${answers.title}
+# ${licenseBadge(answers)}
 ### Created by ${answers.githubinfo} Github user.
 ## Table of Contents
 * [Description](#description)
@@ -97,21 +98,15 @@ const init = () => {
 
 init();
 
-
-// switch (licenseType) {
-//     case 'Apache license 2.0':
-//         response = '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
-//         break;
-//     case 'IBM':
-//         response = '[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)'
-//         break;
-//     case 'MIT':
-//         response = '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
-//         break;
-//     case 'ICS':
-//         response = '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)'
-//         break;
-//     default:
-//         response = 'None'
-//         break;
-// }return response;
+let licenseBadge = (answers) =>{
+if(answers.license === 'Appache license 2.0') {
+   return '[![License](https://img.shields.io/badge/License-Apache%202.0-blue.svg)](https://opensource.org/licenses/Apache-2.0)'
+}else if (answers.license === 'IBM'){
+    return '[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)'
+}else if(answers.license === 'MIT'){
+  return '[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)'
+}else if(answers.license === 'ICS'){
+   return '[![License: ISC](https://img.shields.io/badge/License-ISC-blue.svg)](https://opensource.org/licenses/ISC)'
+}else if(answers.license === 'None'){
+        return 'None'}
+}
