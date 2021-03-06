@@ -1,7 +1,7 @@
 
 # README GENERATOR
-# [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
-### Created by Dora-O Github user.
+# [![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)
+### Created by DORA-O Github user.
 ## Table of Contents
 * [Description](#description)
 * [Installation](#installation)
@@ -18,12 +18,18 @@ You will need to use the npm init -y and init install inquirer command.
 You will need to access the main folder where index.js exists, run node index.js and follow prompts on command line to generate a ReadMe file.
     
 ### Licenses
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)
+[![License: IPL 1.0](https://img.shields.io/badge/License-IPL%201.0-blue.svg)](https://opensource.org/licenses/IPL-1.0)
     
 ### Contributors
-No
+NO
     
 ### Tests
 N/A
 ### Contact Info
-dorozco2390@utexas.edu
+DOROZCO2390@UTEXAS.EDU
+
+## Walk Through Video
+[Google Drive Link](https://drive.google.com/file/d/1LP_G-GJOqj3Y_sVJeNzTF7wH8CPovdPi/view?usp=sharing)
+
+## Screenshots
+<img src =https://user-images.githubusercontent.com/70343136/110195787-5fac5d80-7e05-11eb-87c6-8d3852b489f4.png>
