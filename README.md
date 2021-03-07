@@ -29,7 +29,7 @@ N/A
 DOROZCO2390@UTEXAS.EDU
 
 ## Walk Through Video
-[Google Drive Link](https://drive.google.com/file/d/1LP_G-GJOqj3Y_sVJeNzTF7wH8CPovdPi/view?usp=sharing)
+[Video Link](https://youtu.be/LJDEDQDcHeM)
 
 ## Screenshots
 <img src =https://user-images.githubusercontent.com/70343136/110195787-5fac5d80-7e05-11eb-87c6-8d3852b489f4.png>
